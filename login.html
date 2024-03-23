@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <style>
+    #form_logo
+    {
+      position:relative;
+      width: 40px;
+      height: 40px;
+      left: 44%;
+    }
+    button{
+      width: 80px;
+      height: 30px;
+    }
+    .message
+    {
+      position: relative;
+      color: aliceblue;
+      height: 40px;
+      top: 200px;
+    }
+
+    .message h1
+    {
+      position: relative;
+      left: 200px;
+      width: 400px;
+    }
+    .message h4
+    {
+      position: relative;
+      left: 90px;
+      width: 760px;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>WELCOME BACK !!
+    </h1>
+    <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+      No matter how far we may wander from the Lord’s perfect will for our lives, we are always welcome back.
+    </h4>
+  </div>
+  <div class="login-container">
+    <img id ="form_logo" src="logo.jpg" alt="Logo">
+    <h1 style="font-style: italic;">Login</h1>
+    <form id="login-form" action="homepage.html">
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <button type="submit" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: rgb(122, 234, 137); ">Login </button>
+
+    </form>
+    <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;">Don't have an account? <a href="sign.html"> Sign up</a></p>
+  </div>
+</body>
+</html>

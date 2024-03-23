@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake New Detection</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<style>
+
+text{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-bar {
+  background-color: #000000;
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0px;
+}
+
+.top-bar a:hover {
+  color: #f1f1f1;
+}
+
+.home-container
+{
+  width: 400px;
+  height:200px;
+  left: auto;
+
+}
+</style>
+<body>
+  <div class="header">
+    <div style="display:flex; align-items:center;  font-style: italic; ">
+    <img src="logo.jpg" alt="Logo" style="height:50px; margin-right:10px;">
+    <h2 style="margin:0;">Fake New Detection</h2>
+  </div>
+  <div class="top-bar" >
+    <a href="homepage.html"><button style="background-color: transparent;" onclick=""> Home</button>
+      <a href="about.html"><button style="background-color: transparent;">About</button></a>
+      <a href="service.html"><button style="background-color: transparent;">Services</button></a>
+      <a href="contact us .html"><button style="background-color:transparent;">contact Us</button></a>
+    <a href="sign.html"><button style="background-color:#4CAF50; color:#fff; padding:5px 10px; border:none; border-radius:5px; cursor:pointer;">Sign up </button></a>
+  </div>
+  </div>
+
+  <div class="home-container">
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Here you can analyze the news</p>
+    <form id="analysis-form">
+      <label for="article-url">Enter the News :</label>
+      <input type="text" id="article-url" name="article-url" required>
+      <br>
+      <button type="submit" style=" width: 100px; height: 40px; background-color: #6fe573;">Analyze</button>
+    </form>
+    <div id="analysis-results"></div>
+  </div>
+
+
+<script>
+  const button = document.querySelector('button');
+  const dropdown = document.querySelector('div[style*="display: none"]');
+
+  button.addEventListener('click', () => {
+    if (dropdown.style.display === 'none')
+     {
+      dropdown.style.display = 'block';
+    } else
+     {
+      dropdown.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>
